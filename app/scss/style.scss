@@ -8,7 +8,7 @@
   background-position: center;
   background-size: cover;
   max-width: 2560px;
-  height: 840px;
+  min-height: 840px;
   &__top {
      display: flex;
      justify-content: flex-end;
@@ -80,6 +80,9 @@
   }
   &__product-inner {
     position: relative;
+  }
+  &__product-img2 {
+    display: none;
   }
   &__product-price {
     position: absolute;
@@ -163,8 +166,32 @@
     &--first::before {
       content: '2в1';
     }
+    &--first::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 9px;
+      height: 30px;
+      bottom: -37px;
+      left: 27px;
+    }
     &--second::before {
       content: '1';
+    }
+    &--second::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 7px;
+      height: 39px;
+      bottom: -47px;
+      left: 27px;
     }
     &--third::before {
       content: '2';
@@ -189,7 +216,19 @@
     width: 100%;
     margin-left: 25px;
     background-color: #fff;
-    
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 49px;
+      height: 233px;
+      right: -34px;
+      top: 172px;
+    }
   }
   &__order-delivery {
     display: flex;
@@ -408,7 +447,7 @@
 .danger {
   &__inner {
     text-align: center;
-    padding: 30px 0 60px;
+    padding: 50px 0 60px;
   }
   &__title {
     font-size: 48px;
@@ -426,9 +465,58 @@
   &__items {
     display: flex;
     justify-content: space-between;
+    
   }
   &__item {
-    max-width: 350px;
+    max-width: 340px;
+    position: relative;
+    margin: 15px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/round-line1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 179px;
+      height: 120px;
+      top: -21px;
+      left: -19px;
+    }
+    &::after {
+      content: '1';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      top: -16px;
+      left: 111px;
+      background-color: #ec9a6a;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--second {
+      &::before {
+        background-image: url(../images/round-line2.png);
+      }
+      &::after {
+        content: '2';
+        background-color: #e47643;
+      }
+    }
+    &--third {
+      &::before {
+        background-image: url(../images/round-line3.png);
+      }
+      &::after {
+        content: '3';
+        background-color: #ec5b19;
+      }
+    }
   }
   &__item-results {
     display: flex;
@@ -441,6 +529,7 @@
     overflow: hidden;
     border-radius: 50%;
     flex: 0 0 170px;
+    position: relative;
   }
   &__img {
     display: block;

@@ -1,0 +1,134 @@
+@media (max-width: 1500px) {
+  .header {
+    background-image: url(../images/header-bg2.jpg);
+  }
+  .header__info {
+    padding-top: 405px;
+    justify-content: center;
+    position: relative;
+  }
+  .header__product {
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 649px;
+  }
+  .header__product-img1 {
+    display: none;
+  }
+  .header__product-img2 {
+    display: block;
+  }
+  .header__product-price--red {
+    left: 300px;
+  }
+  .header__product-price--green {
+    left: 400px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .danger__items {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .danger__item {
+    margin-top: 30px;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .header__top {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin-bottom: 30px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+  .header__info {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .header__descr {
+    margin-bottom: 50px;
+  }
+  .header__order {
+    margin-left: 0;
+  }
+  .header__product-img2 {
+    max-width: 649px;
+    width: 100%;
+  }
+  .header__product-price--red {
+    top: -35px;
+    left: 17px;
+  }
+  .header__product-price--green {
+    top: 77px;
+    left: 125px;
+  }
+  .statistic__text {
+    padding: 26px 60px 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  
+  .header__product-price--green {
+    top: 50px;
+  }
+  .header__info {
+    padding-top: 330px;
+  }
+  .danger__title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .statistic__text {
+    padding: 20px 15px 20px;
+  }
+}
+@media (max-width: 450px) {
+  .advantages {
+    justify-content: flex-start;
+  }
+  .header__order::after {
+    right: -15px;
+  }
+  .header__info {
+    padding-top: 250px;
+  }
+  .header__product-price {
+    font-size: 24px;
+    max-width: 90px;
+  }
+  .danger__item-ttl {
+    font-size: 18px;
+  }
+  .danger__item-descr {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .statistic__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
